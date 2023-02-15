@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    overflow: hidden; /* Hide scrollbars */
+    margin: 0;
+   font-family: 'Open Sans', sans-serif;
+  }
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+#playstation {
+    background-image:
+    linear-gradient(to top, rgba(212, 217, 245, 0.52), rgba(88, 36, 244, 0.73)),
+    url('ps.jpg');
+    background-blend-mode: multiply;
+    height: 100vh;
+    background-position: left; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    transition: all 1s;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#xbox {
+    background-image: linear-gradient(to top, rgba(57, 58, 65, 0.52), rgba(12, 10, 20, 0.73)),
+    url('xbox.jpg');
+    height: 100vh;
+    background-position: left; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    flex-grow: 1;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 45px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 3px solid white;
+    cursor:pointer;
+    overflow: hidden; 
+    color: white;
+    font-size: 16px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+
+
+
+  }

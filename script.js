@@ -21,14 +21,12 @@ xbox.addEventListener('mouseenter', (e) => {
 
   xbox.addEventListener('touchstart', (event) => {
     xbox.style.flexGrow = '3';
-    playstation.style.flexGrow = '1';
     console.log("hey");
   });
 
 
   playstation.addEventListener('touchstart', (e) => {
     playstation.style.flexGrow = '3';
-    xbox.style.flexGrow = '1';
     console.log("hey2");
   });
   

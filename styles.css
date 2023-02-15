@@ -4,6 +4,7 @@ body {
     overflow: hidden; /* Hide scrollbars */
     margin: 0;
    font-family: 'Open Sans', sans-serif;
+   height: 100%
   }
 
 .container {

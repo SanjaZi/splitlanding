@@ -73,17 +73,15 @@ button {
     }
 
     #xbox {
-   
         height: auto;
-      
-        
     }
 
     #playstation {
         height: auto;
         background-position: center; 
-     
     }
-
+button {
+    outline: none;
+}
 
   }

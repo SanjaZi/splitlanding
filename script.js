@@ -1,5 +1,19 @@
 const playstation = document.getElementById('playstation');
 const xbox = document.getElementById('xbox');
+const container = document.getElementsByClassName("container");
+
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+container[0].style.setProperty('--vh', `${vh}px`);
+
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  container[0].style.setProperty('--vh', `${vh}px`);
+});
+
 
 
 xbox.addEventListener('mouseenter', (e) => {
@@ -30,4 +44,6 @@ xbox.addEventListener('mouseenter', (e) => {
     console.log("hey2");
   });
   
+
+
 

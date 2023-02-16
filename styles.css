@@ -5,12 +5,8 @@ body {
     margin: 0;
    font-family: 'Open Sans', sans-serif;
    height: 100%;
-   height: -webkit-fill-available;
   }
 
-  html {
-  height: -webkit-fill-available;
-}
 
 .container {
     height: 100vh;
